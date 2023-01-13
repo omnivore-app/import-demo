@@ -11,3 +11,5 @@ This app demonstrates using [Omnivore's](https://omnivore.app) `uploadImportFile
 1. Create a csv file of URLs (one url per row), name the file `import.csv`.
 2. Create an API key at <https://omnivore.app/settings/api>.
 3. Run the app using `OMNIVORE_API_TOKEN=<your token> npm run import`
+
+This app is based on <https://github.com/davidohlin/instapaper-to-omnivore-import>
