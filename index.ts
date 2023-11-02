@@ -58,7 +58,6 @@ async function main() {
             "content-length": importFile.byteLength,
           },
         }
-        
       );
       console.log(`Successfully started import.`);
     } catch (err) {
