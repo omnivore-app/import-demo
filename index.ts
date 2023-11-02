@@ -23,6 +23,8 @@ const uploadImportFileMutation = gql`
   }
 `;
 
+const util = require('util')
+
 async function main() {
   console.log("Connecting to ", OMNIVORE_API_URL);
   if (!process.env.OMNIVORE_API_TOKEN) {
@@ -56,15 +58,15 @@ async function main() {
             "content-length": importFile.byteLength,
           },
         }
+        
       );
+      console.log(`Successfully started import.`);
     } catch (err) {
       console.log("error uploading:", err);
     }
   } else {
-    console.log("error response: " + response);
+    console.log("error response: " + util.inspect(response, {showHidden: false, depth: null, colors: true}));
   }
-
-  console.log(`Successfully started import.`);
 }
 
 main();
