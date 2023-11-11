@@ -9,7 +9,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "axios": "^1.2.2",
+    "axios": "^1.6.0",
     "dotenv": "^16.0.0",
     "graphql": "^16.6.0",
     "graphql-request": "^4.0.0"
